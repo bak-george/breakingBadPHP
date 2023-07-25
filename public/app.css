@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+The Breaking Bad Color Scheme palette has 6 colors which are Dark Green (#093009), 
+Traditional Forest Green (#0D3E10), Mughal Green (#1F6032), Japanese Laurel (#29773E), Sea Green (#369457) and Smoky Black (#032202). */
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Open+Sans:wght@300;400&family=Roboto:ital,wght@0,500;1,400&family=Source+Sans+Pro&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-image: url("/images/ganapathy-kumar-L75D18aVal8-unsplasha.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+}
+
+a { 
+    color: #29773E;
+    text-decoration: none;
+    transition: color 300ms ease-in-out;
+}
+
+li {
+    list-style: none;
+}
+
+
+.title {
+    display: flex;
+    flex-wrap: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.title img {
+    width: 4rem;
+    height: 6rem;
+}
+
+.title h1 {
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.5rem #29773E;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav {
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem #29773E;
+    
+}
+
+nav ul li:hover {
+    text-decoration: underline #29773E;
+}
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 50rem;
+    flex-wrap: center;
+    justify-content: center;
+}
+
+.character-box {
+    width: 20rem;
+    height: 20rem;
+    border: 0.2rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem #29773E;
+}
+
+.character-image img {
+    width: 19.7rem;
+    height: 19.8rem;
+    object-fit:cover;
+    object-position: top;
+    z-index: -1;
+    position: relative;
+}
+
+.character-data {
+    position: absolute;
+    z-index: 2;
+    transform: translate(21rem, -15rem);
+}
+
+.character-data p {
+    font-size: 1rem;
+    line-height: normal;
+    text-shadow: 0.1rem 0.1rem 0.5rem #29773E;
+}
+
+.quote-box {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    left: 20rem;
+    border: 0.2rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29773E;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem #29773E;
+}
+
+.quote-box > p {
+    text-align: center;
+    max-width: 19rem;
+    max-height: 19rem;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    overflow: scroll;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 0;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 5rem;
+    background: #29773E;
+    transition: background-color 200ms ease-in-out;
+    transition: box-shadow 200ms ease-in-out;
+    transition: color 300ms ease-in-out;
+    border: 0.2rem solid black;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem #29773E;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: #29773E;
+    color: white;
+    box-shadow: -0.2rem -0.2rem 0.5rem 0.1rem #29773E;
+    cursor: pointer;
+}
+
+.btn img {
+    height: 3rem;
+    width: 3rem; 
+}
+
+.btn h2 {
+    padding: 0 1rem;
+    color:black;
+}
+
+.cook {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  height: 50rem;
+  flex-basis: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px); 
+  border-radius: 10px;
+}
+
+.form_h1, .add_quote_btn > h1 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.errors {
+  color: red;
+}
+
+.content_disclaimer {
+  color: white;
+  text-decoration: underline #29773E;
+}

@@ -1,0 +1,166 @@
+@media only screen and (min-width: 413px) and (max-width: 638px)  {
+    .title {
+        padding-top: 0;
+        position: static;
+    } 
+
+    .character-box {
+        margin-bottom: 3px;
+    }
+    
+    .quote-box {
+        left: 0rem;
+   }
+
+   .quote-box > p {
+        font-size: 0.96rem;
+   }
+
+   .btn {
+        margin-top: 5px;
+   }
+
+   p {
+        font-size: 14px;
+   }
+
+   #cook a {
+    display: hidden;
+  }
+}
+
+@media all and (min-width: 310px) and (max-width: 412px) {
+
+    .container {
+        display: flex;
+       flex-direction: column;
+        align-items: center;
+        width: 20rem;
+        height: 30rem;
+        padding-top: 1rem;
+        border: 0.2rem solid black;
+        box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem #29773E;
+    }
+
+    .character-box {
+        margin-bottom: 10px;
+        width: 20rem;
+        height: 19rem;
+        border: none;
+        box-shadow: none;
+    }
+
+    .character-image img {
+        width: 20rem;
+        height: 21rem;
+        align-items: top;
+    }
+    
+    .quote-box {
+        left: 0rem;
+        border: none;
+        box-shadow: none;
+        width: 19.65rem;
+        height: 10rem;
+   }
+
+   .title {
+        position: static;
+   }
+
+   .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .quote-box > p {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    .btn {
+        margin-top: 6px;
+    }
+
+    #cook a {
+      display: hidden;
+    }
+}
+
+@media all and (max-height: 915px) {
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .container {
+        justify-content: space-around;
+        align-items: center;
+        width: 20rem;
+        height: 26rem;
+        padding-top: 1rem;
+        border: 0.2rem solid black;
+        box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem #29773E;
+    }
+
+    .character-box {
+        margin-bottom: 10px;
+        width: 20rem;
+        height: 19rem;
+        border: none;
+        box-shadow: none;
+    }
+
+    .character-image img {
+        width: 20rem;
+        height: 21rem;
+        align-items: top;
+    }
+    
+    .quote-box {
+        left: 0rem;
+        border: none;
+        box-shadow: none;
+        width: 19.65rem;
+        height: 15rem;
+   }
+
+   .title h1 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem
+    }
+
+    .title > img {
+        padding-top: 1rem;
+    }
+
+    .quote-box > p {
+        font-size: 0.96rem;
+   }
+
+  .character-data {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    transform: translate(0,28rem);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px); 
+    
+    width: 19.65rem;
+  }
+
+  .character-data p {
+    transform: translate(5px,0);
+    font-size: 1rem;
+    line-height: normal;
+    text-shadow: none;
+  }
+
+  .cook {
+    width: 20rem;
+    height: 19rem;
+  }
+  
+  #cook {
+    display: none;
+  }
+}
