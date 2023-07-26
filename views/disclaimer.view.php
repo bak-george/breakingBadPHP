@@ -1,5 +1,5 @@
 <?php require('partials/head.php'); ?>
-<section class="cook">
+<section class="disclaimer">
   <h1>Content Disclaimer</h1>
   <p>
   This website, "breakbadquotegenerator.com" is a fan-made project intended for entertainment and educational purposes only. We do not claim ownership of any content found on this site, including but not limited to the quotes from "Breaking Bad" and any images related to the series. </p>
