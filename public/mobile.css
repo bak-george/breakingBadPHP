@@ -163,4 +163,12 @@
   #cook {
     display: none;
   }
+
+    .disclaimer {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px); 
+    border-radius: 10px;
+    background-size: cover;
+    padding: 0 0.8rem;
+  }
 }
