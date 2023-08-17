@@ -16,10 +16,10 @@ class Quote
     }
 
     $totalQuotes = $db->query("SELECT COUNT(*) as total FROM quotes")->get();
-    echo "seen quote count:\n";
-    var_dump($_SESSION['seen_quotes']);
+    
     if(count($_SESSION['seen_quotes']) >= $totalQuotes) {
-      
+      $_SESSION['seen_quotes'] = [];
+      session_destroy();
     }
 
     $seenQuotesCondition = "";
