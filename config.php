@@ -6,7 +6,7 @@ return [
     'port' => 25060,
     'dbname' => 'breaking_bad',
     'username' => 'doadmin',
-    'password' => 'fjdkfjdkjscsdc'
+    'password' => 'AVNS_oeI5IduHGw2qvKVj66p'
   ],
   'recaptcha' => [
     'secretKey' => '6LdZgEUnAAAAAE4OTdtz8eWJogSuAK1afpKbfVTW'
