@@ -42,8 +42,6 @@ class Quote
       header('location: /quote');
       exit();
     }
-  
-    return false;
   }
 }
 
