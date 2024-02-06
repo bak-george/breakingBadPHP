@@ -2,46 +2,91 @@
 
 namespace Core;
 
-class Quote 
+class Quote
 {
-  public static function getRandomQuote($db)
-  {
-    if (session_status() == PHP_SESSION_NONE) {
-      session_start();
+    private array $charactersAndQuotes;
+
+    public function __construct(array $charactersAndQuotes)
+    {
+        $this->charactersAndQuotes = $charactersAndQuotes;
+    }
+    public function generateRandomQuote(): array
+    {
+        $quotesMap = isset($_COOKIE['quotesMap']) ? json_decode($_COOKIE['quotesMap'], true) : [];
+
+        $quote = $this->getRandomSingleQuote($this->charactersAndQuotes);
+
+        $charId = $this->getIdBasedOnQuote($quote, $this->charactersAndQuotes);
+
+        while (in_array($quote, $quotesMap)) {
+            $quote = $this->getRandomSingleQuote($this->charactersAndQuotes);
+            $charId = $this->getIdBasedOnQuote($quote, $this->charactersAndQuotes);
+        }
+
+        if (!in_array($quote, $quotesMap)) {
+            $quotesMap[] = $quote;
+        }
+
+        setcookie('quotesMap', json_encode($quotesMap), time() + 3600, '/');
+
+        if (count($quotesMap) == $this->countQuotes($this->charactersAndQuotes)) {
+            setcookie('quotesMap', '', time() - 3600, '/');
+        }
+
+        $characterAndQuote = self::getCharacterData($charId, $this->charactersAndQuotes);
+        $characterAndQuote['quote'] = $quote;
+
+        return $characterAndQuote;
     }
 
-    if (!isset($_SESSION['seen_quotes'])) {
-      $_SESSION['seen_quotes'] = [];
-      array_unshift($_SESSION['seen_quotes'], 1);
+    private function getIdBasedOnQuote($quote, $characters)
+    {
+        foreach ($characters as $character) {
+            if (in_array($quote, $character['quotes'])) {
+                return $character['id'];
+            }
+        }
+
+        return null;
     }
 
-    $totalQuotes = $db->query("SELECT COUNT(*) as total FROM quotes")->get();
-    
-    if(count($_SESSION['seen_quotes']) >= $totalQuotes) {
-      $_SESSION['seen_quotes'] = [];
-      session_destroy();
+    private function getRandomSingleQuote(array $data)
+    {
+        $randomKey = array_rand($data);
+        $quotes = $data[$randomKey]['quotes'];
+        $randomQuoteKey = array_rand($quotes);
+
+        return $quotes[$randomQuoteKey];
     }
 
-    $seenQuotesCondition = "";
+    private function getCharacterData(int $id, $characters)
+    {
+        $characterData = [];
 
-    if (!empty($_SESSION['seen_quotes'])) {
-      $seenQuotes = implode(',', $_SESSION['seen_quotes']);
-      $seenQuotesCondition = "WHERE id NOT IN ($seenQuotes)";
-    }
-    
-    $sqlQuote = "SELECT * FROM quotes {$seenQuotesCondition} ORDER BY RAND() LIMIT 1";
-  
-    $randomQuote = $db->query($sqlQuote)->get();
- 
-    if ($randomQuote) {
-      array_unshift($_SESSION['seen_quotes'], $randomQuote[0]['id']);
+        foreach ($characters as $character) {
+            if ($character['id'] == $id) {
+                $characterData['full_name']  = $character['full_name'];
+                $characterData['nickname']  = $character['nickname'];
+                $characterData['occupation']  = $character['occupation'];
+                $characterData['status'] = $character['status'];
+                $characterData['image'] = $character['image'];
+            }
+        }
 
-      return $randomQuote;
-    } else {
-      $_SESSION['seen_quotes'] = [];
-      header('location: /quote');
-      exit();
+        return $characterData;
     }
-  }
+
+   private function countQuotes(array $characters): int
+   {
+       $totalQuotes = 0;
+
+       foreach ($characters as $character) {
+           if (isset($character['quotes']) && ($character['quotes'])) {
+               $totalQuotes += count($character['quotes']);
+           }
+       }
+
+      return $totalQuotes;
+   }
 }
 

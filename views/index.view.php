@@ -2,28 +2,22 @@
     <section class="container">
         <div class="character-box">
             <div class="character-image">
-                <img src="<?php echo $character[0]['image'];?>" 
-                 id="depiction">
+                <img src="<?php echo $data['image'];?>"
+                     id="depiction" alt="breaking_bad_character_image">
             </div>
         </div>
         <div class="character-data">
-            <p>Name: <?php echo $character[0]['full_name']; ?></p>
-            <p>Nickname: <?php echo $character[0]['nickname']; ?></p>
-            <p>Occupation: <?php echo $character[0]['occupation']; ?></p>
-            <p>Status: <?php echo $character[0]['status']; ?></p>
-            <?php 
-                if ($quote[0]['contributor_nickname'] !== null) { ?>
-                    <p>Quote Contributor:                                  
-                       <?php echo htmlspecialchars($quote[0]['contributor_nickname']); ?>
-                    </p>
-            <?php } ?>
+            <p>Name: <?php echo htmlspecialchars($data['full_name']); ?></p>
+            <p>Nickname: <?php echo htmlspecialchars($data['nickname']); ?></p>
+            <p>Occupation: <?php echo htmlspecialchars($data['occupation']); ?></p>
+            <p>Status: <?php echo htmlspecialchars($data['status']); ?></p>
         </div>
         <div class="quote-box">
             <p id="current-quote">
-                <?php $getQuote = $quote[0]['quote']; echo htmlspecialchars($getQuote); ?>
+                <?php $getQuote = $data['quote']; echo htmlspecialchars($getQuote); ?>
             </p>
         </div>
-     </section>
+    </section>
     <?php require('partials/footer.php'); ?>
 </body>
 </html>

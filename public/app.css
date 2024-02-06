@@ -145,18 +145,14 @@ nav ul li:hover {
 .btn {
     display: flex;
     flex-direction: row;
-    margin: 4rem 0;
-    align-items: center;
-    justify-content: center;
-    width: 20rem;
-    height: 5rem;
     background: #29773E;
-    transition: background-color 200ms ease-in-out;
-    transition: box-shadow 200ms ease-in-out;
+    justify-content: space-between;
+    align-items: flex-end;
     transition: color 300ms ease-in-out;
     border: 0.2rem solid black;
     box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem #29773E;
     font-size: 1rem;
+    padding: 0.5rem;
 }
 
 .btn:hover {
@@ -168,12 +164,13 @@ nav ul li:hover {
 
 .btn img {
     height: 3rem;
-    width: 3rem; 
+    width: 3rem;
+    margin-right: 1rem;
 }
 
 .btn h2 {
-    padding: 0 1rem;
     color:black;
+    margin-right: 1rem;
 }
 
 .cook {

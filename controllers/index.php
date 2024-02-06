@@ -1,17 +1,14 @@
 <?php 
 
-use Core\App;
-use Core\Database;
+use Core\Quote;
 
-$db = App::resolve(Database::class);
+$quotePath = require_once '../characterAndQuotes.php';
 
-$quote = $db->query('select * from quotes where id = :id', ['id' => 1])->get();
+$quote = new Quote($quotePath);
 
-$character = $db->query('select * from characters where id = :id', ['id' => 1])->get();
-
+$data = $quote->generateRandomQuote();
 
 view("index.view.php", [
      'heading' => 'home',
-     'quote' =>  $quote,
-     'character' => $character
+     'data' =>  $data
 ]);
