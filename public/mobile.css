@@ -172,4 +172,8 @@
     padding: 0 0.8rem;
     margin: 0 0;
   }
+
+    .btn {
+        margin-top: 4rem;
+    }
 }
