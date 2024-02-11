@@ -4,7 +4,7 @@ $buttonPages = ['home', 'singlequote'];
 
 if (in_array($heading, $buttonPages)) { ?>
     <button type="button" class="btn" onclick="window.location.reload();">
-        <img src="images/breakingBadQuoteTestingTube.svg">
+        <img src="images/breakingBadQuoteTestingTube.svg" alt="breakingBadQuoteGenerator beaker icon">
         <h2>Let's Cook!</h2>
     </button>
 <?php } ?>

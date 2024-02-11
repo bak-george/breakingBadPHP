@@ -14,7 +14,7 @@
         </div>
         <div class="quote-box">
             <p id="current-quote">
-                <?php $getQuote = $data['quote']; echo htmlspecialchars($getQuote); ?>
+                <?php echo htmlspecialchars($data['quote']); ?>
             </p>
         </div>
     </section>

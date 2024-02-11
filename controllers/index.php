@@ -2,6 +2,8 @@
 
 use Core\Quote;
 
+$heading = 'quote';
+
 $quotePath = require_once '../characterAndQuotes.php';
 
 $quote = new Quote($quotePath);

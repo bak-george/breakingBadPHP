@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Open+Sans:wght@300;400&family=Roboto:ital,wght@0,500;1,400&family=Source+Sans+Pro&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,9 +9,6 @@
 /* 
 The Breaking Bad Color Scheme palette has 6 colors which are Dark Green (#093009), 
 Traditional Forest Green (#0D3E10), Mughal Green (#1F6032), Japanese Laurel (#29773E), Sea Green (#369457) and Smoky Black (#032202). */
-
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Open+Sans:wght@300;400&family=Roboto:ital,wght@0,500;1,400&family=Source+Sans+Pro&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
-
 html {
     min-height: 100vh;
 }
@@ -40,7 +39,7 @@ li {
 
 .title {
     display: flex;
-    flex-wrap: center;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     padding-top: 1rem;
@@ -64,7 +63,7 @@ nav {
 
 nav ul{
     display: flex;
-    flex-wrap: center;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
@@ -85,7 +84,7 @@ nav ul li:hover {
     flex-direction: column;
     width: 40rem;
     height: 50rem;
-    flex-wrap: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -112,6 +111,10 @@ nav ul li:hover {
     position: absolute;
     z-index: 2;
     transform: translate(21rem, -15rem);
+}
+
+#character-data-about {
+    transform: translate(21rem, -13rem);
 }
 
 .character-data p {
@@ -151,7 +154,6 @@ nav ul li:hover {
     transition: color 300ms ease-in-out;
     border: 0.2rem solid black;
     box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem #29773E;
-    font-size: 1rem;
     padding: 0.5rem;
     margin-bottom: 4rem;
 }
@@ -172,6 +174,8 @@ nav ul li:hover {
 .btn h2 {
     color:black;
     margin-right: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
 }
 
 .cook {

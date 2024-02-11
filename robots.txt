@@ -1,0 +1,18 @@
+User-agent: Googlebot
+Allow: /
+Allow: /about
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: MobileBot
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Googlebot-Smartphone
+Allow: /
+
+User-agent: *
+Allow: /

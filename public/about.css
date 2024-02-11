@@ -10,9 +10,9 @@
   }
 
   .character-data p {
-    transform: translate(5px,0);
+    transform: translate(5px, 0);
     font-size: 1rem;
     line-height: normal;
     text-shadow: none;
-
+  }
 }

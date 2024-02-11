@@ -1,4 +1,5 @@
 <?php
+$heading = 'about';
 $email = "george_bak@proton.me";
 $encoded_email = htmlentities($email);
 
