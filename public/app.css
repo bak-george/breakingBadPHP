@@ -122,8 +122,17 @@ nav ul li:hover::after {
     transform: translate(21rem, -15rem);
 }
 
-#character-data-about {
+.developer-data {
+    position: absolute;
+    z-index: 2;
     transform: translate(21rem, -13rem);
+}
+
+.developer-data p {
+    font-size: 1rem;
+    line-height: normal;
+    text-shadow: var(--text-shadow);
+    color: black;
 }
 
 .character-data p {

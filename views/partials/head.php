@@ -19,17 +19,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet"  href="../app.css">
     <link rel="stylesheet" href="../loader.css">
-    <?php
-      if ($heading === 'about') { ?>
-          <link rel="stylesheet" href="../about.css">
-      <?php } ?>
     <link rel="stylesheet" href="../mobile.css">
     <meta name="google-site-verification" content="QT0diLlD-xrYWkSfr7D8jFdEGnDyIuThBC6SunzMNm0" />
-    <script src="getScreenDimensions.js" defer></script>
+    <script src="getScreenDimensions.js"></script>
     <script src="loader.js" defer></script>
-  <script>
-
-  </script>
+    <?php
+    if ($heading === 'about') { ?>
+        <link rel="stylesheet" href="../about.css">
+    <?php } ?>
     <title>Breaking Bad Quotes Generator</title>
 </head>
 <body>

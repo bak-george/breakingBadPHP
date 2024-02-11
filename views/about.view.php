@@ -6,7 +6,7 @@
                  id="depiction">
             </div>
         </div>
-        <div class="character-data" id="character-data-about">
+        <div class="developer-data">
             <p>Name: <?php echo htmlspecialchars($developer['name']); ?></p>
             <p>Nickname: <?php echo htmlspecialchars($developer['nick_name']); ?></p>
             <p>Occupation: <?php echo htmlspecialchars($developer['occupation']); ?></p>

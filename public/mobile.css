@@ -143,9 +143,9 @@
     z-index: 2;
     transform: translate(0,28rem);
     background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(8px); 
-    
-    width: 19.65rem;
+    backdrop-filter: blur(8px);
+    padding: 6px;
+    margin: 5px;
   }
 
   .character-data p {
@@ -154,6 +154,24 @@
     line-height: normal;
     text-shadow: none;
   }
+
+    .developer-data {
+        position: absolute;
+        z-index: 2;
+        transform: translate(0,28rem);
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(8px);
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .developer-data p {
+        transform: translate(5px,0);
+        font-size: 1rem;
+        line-height: normal;
+        color: black;
+        text-shadow: none;
+    }
 
   .cook {
     width: 20rem;
