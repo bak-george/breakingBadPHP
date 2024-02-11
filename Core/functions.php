@@ -39,8 +39,14 @@ function view($path, $attributes = [])
   require base_path('views/' . $path);
 }
 
-function simplifyArray($array) {
-    return array_map(function($item) {
-        return $item['quote'];
-    }, $array);
+function updateTextSizeBasedOnQuoteLength(string $quote, int $numOfCharacters = 210)
+{
+    if (strlen($quote) > $numOfCharacters) {
+        $result = true;
+    } else {
+        $result = false;
+    }
+
+    return $result;
 }
+

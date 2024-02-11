@@ -25,15 +25,10 @@
       <?php } ?>
     <link rel="stylesheet" href="../mobile.css">
     <meta name="google-site-verification" content="QT0diLlD-xrYWkSfr7D8jFdEGnDyIuThBC6SunzMNm0" />
+    <script src="getScreenDimensions.js" defer></script>
+    <script src="loader.js" defer></script>
   <script>
-        window.onload = function() {
-      setTimeout(function() {
-        var elements = document.getElementsByClassName("loader");
-        for (var i = 0; i < elements.length; i++) {
-          elements[i].style.display = "none"; 
-        }
-      }, 1000);
-    }
+
   </script>
     <title>Breaking Bad Quotes Generator</title>
 </head>
