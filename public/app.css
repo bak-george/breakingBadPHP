@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+:root {
+    --text-shadow: 0.2rem 0.2rem 0.2rem #369457;
+}
+
 /* 
 The Breaking Bad Color Scheme palette has 6 colors which are Dark Green (#093009), 
 Traditional Forest Green (#0D3E10), Mughal Green (#1F6032), Japanese Laurel (#29773E), Sea Green (#369457) and Smoky Black (#032202). */
@@ -14,7 +18,7 @@ html {
 }
 
 body {
-    background-image: url("/images/ganapathy-kumar-L75D18aVal8-unsplasha.jpg");
+    background-image: url("/images/RVUpscale3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
@@ -27,7 +31,7 @@ body {
 }
 
 a { 
-    color: #29773E;
+    color: black;
     text-decoration: none;
     transition: color 300ms ease-in-out;
 }
@@ -52,9 +56,10 @@ li {
 
 .title h1 {
     text-align: center;
-    text-shadow: 0.1rem 0.1rem 0.5rem #29773E;
+    text-shadow: var(--text-shadow);
     font-size: 1.4rem;
     font-weight: bold;
+    color: black;
 }
 
 nav {
@@ -71,12 +76,16 @@ nav ul{
 
 nav ul li {
     margin: 0 1rem;
-    text-shadow: 0.1rem 0.1rem 0.5rem #29773E;
-    
+    position: relative;
 }
 
-nav ul li:hover {
-    text-decoration: underline #29773E;
+nav ul li:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust as needed */
+    width: 100%;
+    border-bottom: 5px solid #29773E; /* Adjust thickness and color as needed */
 }
 
 .container { 
@@ -95,7 +104,7 @@ nav ul li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem #29773E;
+    box-shadow: var(--text-shadow);
 }
 
 .character-image img {
@@ -120,7 +129,8 @@ nav ul li:hover {
 .character-data p {
     font-size: 1rem;
     line-height: normal;
-    text-shadow: 0.1rem 0.1rem 0.5rem #29773E;
+    text-shadow: var(--text-shadow);
+    color: black;
 }
 
 .quote-box {
@@ -215,3 +225,5 @@ nav ul li:hover {
 .small-screen p {
     font-size: 1rem;
 }
+
+

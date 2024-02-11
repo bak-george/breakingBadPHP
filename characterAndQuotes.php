@@ -7,7 +7,7 @@ return [
         'nickname' => 'Heisenberg',
         'occupation' => 'Chemistry Teacher, Meth Kingpin',
         'status' => 'Dead',
-        'image' => 'https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png',
+        'image' => 'walterWhite.png',
         'quotes' => [
             'Stay Out Of My Territory.',
             'If you don’t know who I am, then maybe your best course would be to tread lightly.',
@@ -25,7 +25,7 @@ return [
         'nickname' => 'Cap n Cook',
         'occupation' => 'Meth Cook',
         'status' => 'Alive',
-        'image' => 'https://upload.wikimedia.org/wikipedia/en/c/c6/Jesse_Pinkman_S5B.png',
+        'image' => 'jessyPinkman.png',
         'quotes' => [
             'So you do have a plan! Yeah Mr. White! Yeah Science!',
             'What if this is like math, or algebra? And you add a plus douchebag to a minus douchebag, and you get, like, zero douchebags?',
@@ -41,7 +41,7 @@ return [
         'nickname' => 'Jimmy McGill',
         'occupation' => 'Lawyer',
         'status' => 'Alive',
-        'image' => 'https://upload.wikimedia.org/wikipedia/en/3/34/Jimmy_McGill_BCS_S3.png',
+        'image' => 'SaulGoodman.png',
         'quotes' => [
             'Congratulations, you’ve just left your family a second-hand Subaru.',
             'Some people are immune to good advice.',
@@ -54,7 +54,7 @@ return [
         'nickname' => 'Gus',
         'occupation' => 'Honest to God Businessman',
         'status' => 'Dead',
-        'image' => 'https://upload.wikimedia.org/wikipedia/en/6/69/Gustavo_Fring_BCS_S3E10.png',
+        'image' => 'gusFring.png',
         'quotes' => [
             'I hide in plain sight, same as you.',
             'I do not believe fear to be an effective motivator.'
@@ -66,7 +66,7 @@ return [
         'nickname' => 'Sky',
         'occupation' => 'Carwash Owner',
         'status' => 'Alive',
-        'image' => 'https://upload.wikimedia.org/wikipedia/en/f/fb/Skyler_White_S5B.png',
+        'image' => 'SkylerWhite.png',
         'quotes' => [
             'Someone needs to protect this family from the man who protects this family.',
             'Well, my name is Skyler White, yo. My husband is Walter White,yo.'
@@ -78,7 +78,7 @@ return [
         'nickname' => 'Mike',
         'occupation' => 'Private Investigator',
         'status' => 'Dead',
-        'image' => 'https://upload.wikimedia.org/wikipedia/en/e/ea/Mike_Ehrmantraut_BCS_S3.png',
+        'image' => 'Michael Ehrmantraut.png',
         'quotes' => [
             'Shut the fuck up and let me die in peace.',
             'Everyone shounds like Meryl Streep with a Gun to Their Head.',
@@ -91,7 +91,7 @@ return [
         'nickname' => 'Hank',
         'occupation' => 'ASAC of the Albuquerque DEA office',
         'status' => 'Dead',
-        'image' => 'https://upload.wikimedia.org/wikipedia/en/d/db/Hank_Schrader_S5B.png',
+        'image' => 'hank.png',
         'quotes' => [
             'Tagging trees is a lot better than chasing monsters.',
             'No, they’re minerals, Jesus Marie!',

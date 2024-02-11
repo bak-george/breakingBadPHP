@@ -1,8 +1,9 @@
-<?php require('partials/head.php'); ?>
+<?php use Core\Validator;
+require('partials/head.php'); ?>
     <section class="container">
         <div class="character-box">
             <div class="character-image">
-                <img src="<?php echo $data['image'];?>"
+                <img src="<?php echo Validator::imagePath($data['image']);?>"
                      id="depiction" alt="breaking_bad_character_image">
             </div>
         </div>

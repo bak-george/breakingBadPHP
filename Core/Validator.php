@@ -15,4 +15,15 @@ class Validator
   {
     return filter_var($value, FILTER_VALIDATE_EMAIL);
   }
+
+  public static function imagePath($img)
+  {
+      if (strpos($img, 'http') === 0) {
+          $imageSrc = $img;
+      } else {
+          $imageSrc = 'images/'. $img;
+      }
+
+      return $imageSrc;
+  }
 }
