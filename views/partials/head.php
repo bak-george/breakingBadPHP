@@ -3,27 +3,27 @@
 <head>
     <?php
     if ($heading = 'quote' && isset($data)) {
-        $description = 'Breaking bad quote: ' . $data['quote'];
+        $desc = 'Breaking bad quote: ' . $data['quote'];
     } elseif ($heading = 'about') {
-        $description = 'Breaking Bad quote generator by George Bakoulis';
+        $desc = 'Breaking Bad quote generator by George Bakoulis';
     } else {
-        $description = 'Find quotes from the universe of Breaking Bad on the Breaking Bad quote generator. Most of the quotes are from Walter White, Jessy Pinkman, and Saul Goodman.';
+        $desc = 'Find quotes from the universe of Breaking Bad on the Breaking Bad quote generator. Most of the quotes are from Walter White, Jessy Pinkman, and Saul Goodman.';
     }
     ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Most Popular Quotes from Breaking Bad">
-    <meta name="description" content="<?php echo htmlspecialchars($description); ?>">
+    <meta name="description" content="<?php echo htmlspecialchars($desc); ?>">
     <link rel="icon" type="image/x-icon" href="images/walterwhite-breakingBadQuoteGenerator.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet"  href="../app.css">
-    <link rel="stylesheet" href="../mobile.css">
    <link rel="stylesheet" href="../loader.css">
     <?php
       if ($heading === 'about') { ?>
           <link rel="stylesheet" href="../about.css">
       <?php } ?>
+    <link rel="stylesheet" href="../mobile.css">
   <script>
         window.onload = function() {
       setTimeout(function() {
@@ -51,3 +51,4 @@
         </div>
         <?php require('nav.php'); ?>
     </header>
+    <main>

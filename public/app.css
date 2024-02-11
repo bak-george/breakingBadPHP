@@ -39,7 +39,7 @@ li {
 
 .title {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: center;
     flex-direction: row;
     align-items: center;
     padding-top: 1rem;
@@ -63,7 +63,7 @@ nav {
 
 nav ul{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: center;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
@@ -84,7 +84,7 @@ nav ul li:hover {
     flex-direction: column;
     width: 40rem;
     height: 50rem;
-    flex-wrap: wrap;
+    flex-wrap: center;
     justify-content: center;
 }
 
