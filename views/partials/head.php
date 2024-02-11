@@ -18,12 +18,13 @@
     <link rel="icon" type="image/x-icon" href="images/walterwhite-breakingBadQuoteGenerator.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet"  href="../app.css">
-   <link rel="stylesheet" href="../loader.css">
+    <link rel="stylesheet" href="../loader.css">
     <?php
       if ($heading === 'about') { ?>
           <link rel="stylesheet" href="../about.css">
       <?php } ?>
     <link rel="stylesheet" href="../mobile.css">
+    <meta name="google-site-verification" content="QT0diLlD-xrYWkSfr7D8jFdEGnDyIuThBC6SunzMNm0" />
   <script>
         window.onload = function() {
       setTimeout(function() {
